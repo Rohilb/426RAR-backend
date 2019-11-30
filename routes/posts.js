@@ -1,5 +1,6 @@
 import express from "express";
 import { userInfo } from "os";
+import {authenticateUser} from "../middlewares/auth.js";
 
 export const router = express.Router();
 export const prefix = '/posts';

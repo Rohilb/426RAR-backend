@@ -10,7 +10,7 @@ export const prefix = '/';
 router.get('/', function (req, res) {
   res.send({
     status: 'You have reached the root of the API!',
-    repo: 'https://github.com/cgburgess/comp426-backend'
+    repo: 'https://github.com/Rohilb/426RAR-backend'
   })
 });
 

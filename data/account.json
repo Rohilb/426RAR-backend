@@ -1,2 +1,14 @@
 {
-}
+    "users": {
+      "name": {
+        "passwordHash": "$2a$10$G9xJ0xGQMCG1IzYQafBxKe6LatelAc1tRKGPDnlBWhmRTVubi/qhm",
+        "data": {
+          "other": "data",
+          "pets_name": "petty"
+        }
+      },
+      "hello": {
+        "passwordHash": "$2a$10$HhIvjUS6TO2SFmjxuE95y.fQrqZ3DpO.TXNG8mEz6GcWXvjN4Ov2m"
+      }
+    }
+  }
