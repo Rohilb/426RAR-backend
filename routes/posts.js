@@ -17,7 +17,7 @@ router.get('/list', function (req, res) {
   });
 });
 
-// When sending axios request to create post, request should include username and content.
+// When sending axios request to create post, request should include an object with username and content.
 router.post('/create', function(req, res) {
   if (!req.username || !req.content) {
     res.status(401).send({msg: 'Expected username and content.'});
@@ -41,7 +41,7 @@ router.post('/create', function(req, res) {
   res.send({"data" : req.content, "status": "Successfully created post!!"});
 });
 
-// When sending axios request to like post, request should include username and postId
+// When sending axios request to like post, request should include an object with username and postId
 router.post('/like', function(req, res) {
   if (!req.username || !req.postId) {
     res.status(401).send({msg: 'Expected username and postID.'});
@@ -59,7 +59,7 @@ router.post('/like', function(req, res) {
   res.send({"status": "Successfully liked post!!"});
 });
 
-// When sending axios request to unlike post, request should include username and postId
+// When sending axios request to unlike post, request should include an object with username and postId
 router.post('/unlike', function(req, res) {
   if (!req.username || !req.postId) {
     res.status(401).send({msg: 'Expected username and postID.'});
@@ -77,7 +77,7 @@ router.post('/unlike', function(req, res) {
   res.send({"status": "Successfully unliked post!!"});
 });
 
-// When sending axios request to delete post, request should include username and postId
+// When sending axios request to delete post, request should include an object with username and postId
 router.post('/delete', function(req, res) {
   if (!req.username || !req.postId) {
     res.status(401).send({msg: 'Expected username and postID.'});
@@ -91,7 +91,7 @@ router.post('/delete', function(req, res) {
 });
 
 
-// When sending axios request to reply to post, request should include username, content, and the id of the post being replied to.
+// When sending axios request to reply to post, request should include an object with username, content, and the id of the post being replied to.
 router.post('/reply', function(req, res) {
   if (!req.username || !req.postId) {
     res.status(401).send({msg: 'Expected username and postID.'});
@@ -122,7 +122,7 @@ router.post('/reply', function(req, res) {
 });
 
 
-// When sending axios request to edit post, request should include username, content, and the id of the post being edited.
+// When sending axios request to edit post, request should include an object with username, content, and the id of the post being edited.
 router.post('/edit', function(req, res) {
   if (!req.username || !req.postId) {
     res.status(401).send({msg: 'Expected username and postID.'});
