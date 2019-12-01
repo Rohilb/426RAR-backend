@@ -1,0 +1,22 @@
+Post objects should look like:
+{
+    "id": "",
+    "username": "",
+    "content": "",
+    "replies": [],
+    "hearts": []
+    "timestamp": ""
+}
+replies should be an array of reply objects.
+hearts should be an array of string objects.
+Reply objects should look like:
+{
+    "id": "",
+    "parentId" : "",
+    "username": "",
+    "content": "",
+    "hearts": []
+    "timestamp": ""
+}
+parentId refers to the ID of the post being replied to.
+hearts should be an array of string objects.

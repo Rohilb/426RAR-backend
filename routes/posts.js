@@ -8,9 +8,6 @@ const {privateStore} = require('../data/DataStore');
 
 router.use(authenticateUser);
 
-// To Do List: Create Post, Like Post, Unlike Post, Reply to Post, Delete Post, Edit Post
-
-
 router.get('/list', function (req, res) {
   // Send a list of posts from connections (friends/matches).
   // We access user's connections and see if it includes post i's user.
@@ -36,7 +33,8 @@ router.post('/create', function(req, res) {
     "username": req.username,
     "content": req.content,
     "replies": [],
-    "hearts": []
+    "hearts": [],
+    "timestamp": new Date()
   });
 
   // Sends response
@@ -59,4 +57,88 @@ router.post('/like', function(req, res) {
 
   // Sends response
   res.send({"status": "Successfully liked post!!"});
+});
+
+// When sending axios request to unlike post, request should include username and postId
+router.post('/unlike', function(req, res) {
+  if (!req.username || !req.postId) {
+    res.status(401).send({msg: 'Expected username and postID.'});
+    return;
+  }
+
+  // updates lack of heart to post
+  // CHECK IF POST HASN'T ALREADY BEEN LIKED.
+  let tempPost = privateStore.get(`posts.${req.postId}`);
+  privateStore.delete(`posts.${req.postId}`);
+  tempPost.hearts = tempPost.hearts.filter(x => x!= req.username);
+  privateStore.set(`posts.${postId}`, tempPost);
+
+  // Sends response
+  res.send({"status": "Successfully unliked post!!"});
+});
+
+// When sending axios request to delete post, request should include username and postId
+router.post('/delete', function(req, res) {
+  if (!req.username || !req.postId) {
+    res.status(401).send({msg: 'Expected username and postID.'});
+    return;
+  }
+
+  privateStore.delete(`posts.${req.postId}`);
+
+  // Sends response
+  res.send({"status": "Successfully deleted post!!"});
+});
+
+
+// When sending axios request to reply to post, request should include username, content, and the id of the post being replied to.
+router.post('/reply', function(req, res) {
+  if (!req.username || !req.postId) {
+    res.status(401).send({msg: 'Expected username and postID.'});
+    return;
+  }
+
+  if (!req.content) {
+    res.status(401).send({msg: 'Expected reply.'});
+    return;
+  }
+
+  let randomId = 1;
+  // updates Replies array.
+  let tempPost = privateStore.get(`posts.${req.postId}`);
+  privateStore.delete(`posts.${req.postId}`);
+  tempPost.replies.push({
+    "id": randomId,
+    "parentId": req.postId,
+    "username": req.username,
+    "content": req.content,
+    "hearts": [],
+    "timestamp": new Date()
+  })
+  privateStore.set(`posts.${postId}`, tempPost);
+
+  // Sends response
+  res.send({"status": "Successfully replied to post!!"});
+});
+
+
+// When sending axios request to edit post, request should include username, content, and the id of the post being edited.
+router.post('/edit', function(req, res) {
+  if (!req.username || !req.postId) {
+    res.status(401).send({msg: 'Expected username and postID.'});
+    return;
+  }
+
+  if (!req.content) {
+    res.status(401).send({msg: 'Expected content.'});
+    return;
+  }
+
+  let tempPost = privateStore.get(`posts.${req.postId}`);
+  privateStore.delete(`posts.${req.postId}`);
+  tempPost.content = req.content;
+  privateStore.set(`posts.${postId}`, tempPost);
+
+  // Sends response
+  res.send({"status": "Successfully edited post!!"});
 });
