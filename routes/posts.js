@@ -24,12 +24,10 @@ router.post('/create', function(req, res) {
     return;
   }
 
-  // ASSIGN RANDOM NUMBER THAT HASNT BEEN USED BEFORE.
-  let randomId = 1;
 
   // Customizes data store.
   privateStore.set(`posts.${postId}`, {
-    "id": randomId,
+    "id": getRandomInt(),
     "username": req.username,
     "content": req.content,
     "replies": [],
@@ -103,12 +101,11 @@ router.post('/reply', function(req, res) {
     return;
   }
 
-  let randomId = 1;
   // updates Replies array.
   let tempPost = privateStore.get(`posts.${req.postId}`);
   privateStore.delete(`posts.${req.postId}`);
   tempPost.replies.push({
-    "id": randomId,
+    "id": getRandomInt(),
     "parentId": req.postId,
     "username": req.username,
     "content": req.content,
@@ -142,3 +139,7 @@ router.post('/edit', function(req, res) {
   // Sends response
   res.send({"status": "Successfully edited post!!"});
 });
+
+let getRandomInt = function () {
+  return Math.floor(Math.random() * Math.floor(Number.MAX_SAFE_INTEGER));
+};
