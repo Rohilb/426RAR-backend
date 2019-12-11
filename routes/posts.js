@@ -8,6 +8,17 @@ const {privateStore} = require('../data/DataStore');
 
 router.use(authenticateUser);
 
+router.get('/status', authenticateUser, function (req, res) {
+  res.send(
+    {
+      user: {
+        name: req.user.name,
+        ...userFilter(accountStore.get(`users.${req.user.name}`))
+      }
+    }
+  );
+});
+
 router.get('/list', function (req, res) {
   // Send a list of posts from connections (friends/matches).
   // We access user's connections and see if it includes post i's user.
@@ -18,16 +29,16 @@ router.get('/list', function (req, res) {
 });
 
 // When sending axios request to create post, request should include an object with username and content.
-router.post('/create', function(req, res) {
+router.post('/create', async function(req, res) {
   if (!req.username || !req.content) {
     res.status(401).send({msg: 'Expected username and content.'});
     return;
   }
 
-
+let postId = getRandomInt();
   // Customizes data store.
   privateStore.set(`posts.${postId}`, {
-    "id": getRandomInt(),
+    "id": postId,
     "username": req.username,
     "content": req.content,
     "replies": [],
