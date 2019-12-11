@@ -18,7 +18,8 @@ router.get('/list', function (req, res) {
 });
 
 // When sending axios request to create post, request should include an object with username and content.
-router.post('/create', function(req, res) {
+router.post('/create', authenticateUser, function(req, res) {
+  console.log("checkPoint1");
   if (!req.username || !req.content) {
     res.status(401).send({msg: 'Expected username and content.'});
     return;
