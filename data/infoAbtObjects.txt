@@ -11,7 +11,7 @@ replies should be an array of reply objects.
 hearts should be an array of string objects.
 Reply objects should look like:
 {
-    "id": "",
+    "replyId": "",
     "parentId" : "",
     "username": "",
     "content": "",

@@ -42,12 +42,13 @@ router.get('/list', function (req, res) {
   // We access user's connections and see if it includes post i's user.
   // If it does, then we add that to the list of posts we send out.
   res.send({
-    "list": privateStore.get("posts").filter(x => { req.username.connections.includes(x.username) }),
+    "list": privateStore.get("posts")
+    // "list": privateStore.get("posts").filter(x => { req.username.connections.includes(x.username) }),
   });
 });
 
 // When sending axios request to create post, request should include an object with username and content.
-router.post('/create', async function (req, res) {
+router.post('/create', function (req, res) {
   if (!req.username || !req.content) {
     res.status(401).send({ msg: 'Expected username and content.' });
     return;
