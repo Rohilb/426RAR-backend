@@ -4,7 +4,9 @@
       "id": 3028406630180143,
       "username": "itsroroluvx",
       "content": "Maleficent 2 is an amazing movie. Let's go see it.",
-      "replies": [],
+      "replies": [
+        ""
+      ],
       "hearts": [],
       "timestamp": "2019-12-12T03:08:12.607Z"
     },
@@ -20,8 +22,12 @@
       "id": 2413102091783321,
       "username": "itsroroluvx",
       "content": "Does anybody want to play League of Legends with me?",
-      "replies": [],
-      "hearts": [],
+      "replies": [
+        "No"
+      ],
+      "hearts": [
+        "hello"
+      ],
       "timestamp": "2019-12-12T03:09:37.873Z"
     },
     "1070239527906413": {
@@ -29,7 +35,9 @@
       "username": "itsroroluvx",
       "content": "I just listened to Lorde's Melodrama. Such a great album!!!",
       "replies": [],
-      "hearts": [],
+      "hearts": [
+        "hello"
+      ],
       "timestamp": "2019-12-12T03:10:29.892Z"
     },
     "7829151327909935": {
@@ -37,7 +45,9 @@
       "username": "itsroroluvx",
       "content": "Can't wait for 2020. It will be an amazing year!!!",
       "replies": [],
-      "hearts": [],
+      "hearts": [
+        "hello"
+      ],
       "timestamp": "2019-12-12T03:11:22.134Z"
     },
     "6773045343218901": {
@@ -116,7 +126,10 @@
       "id": 8565698687769173,
       "username": "itsroroluvx",
       "content": "I want to go back to Toronto.",
-      "replies": [],
+      "replies": [
+        "",
+        "um"
+      ],
       "hearts": [],
       "timestamp": "2019-12-12T03:15:56.152Z"
     },
@@ -124,85 +137,112 @@
       "id": 8912366938043777,
       "username": "itsroroluvx",
       "content": "But honestly, Toronto is such an amazing city.",
-      "replies": [],
-      "hearts": [],
+      "replies": [
+        "Is it though?"
+      ],
+      "hearts": [
+        "hello"
+      ],
       "timestamp": "2019-12-12T03:16:05.796Z"
     },
-    "1498418277057921": {
-      "id": 1498418277057921,
+    "5353315493080759": {
+      "id": 5353315493080759,
       "username": "hello",
-      "content": "jimmy falon <figure class=\"image is-square\">\n        <img src=\"https://i.giphy.com/media/GmlDMFfcNy7tu/giphy.webp\">\n      </figure>",
-      "replies": [],
-      "hearts": [],
-      "timestamp": "2019-12-12T06:03:49.987Z"
-    },
-    "808234113069733": {
-      "id": 808234113069733,
-      "username": "hello",
-      "content": "Hello World ",
-      "replies": [],
-      "hearts": [],
-      "timestamp": "2019-12-12T06:12:22.070Z"
-    },
-    "6311680700424417": {
-      "id": 6311680700424417,
-      "username": "hello",
-      "content": "Penny Polendina said Gay Rights <figure class=\"image is-square\">\n        <img src=\"https://i.giphy.com/media/M9gPb9W1iW8fYowmhN/giphy.webp\">\n      </figure>",
+      "content": "Wait<figure class=\"image is-square\" id=\"figure5353315493080759\">\n            <img src=\"https://i.giphy.com/media/3PzjWJ49MfcrL6hWH5/giphy.webp\">\n          </figure>",
       "replies": [
-        null,
-        "She!"
-      ],
-      "hearts": [],
-      "timestamp": "2019-12-12T08:17:21.256Z"
-    },
-    "8326927172028161": {
-      "id": 8326927172028161,
-      "username": "hello",
-      "content": "JKjkalgjklaj",
-      "replies": [],
-      "hearts": [],
-      "timestamp": "2019-12-12T08:17:58.429Z"
-    },
-    "1681220959437775": {
-      "id": 1681220959437775,
-      "username": "hello",
-      "content": "Whats up it's 3:51 AM ",
-      "replies": [],
-      "hearts": [],
-      "timestamp": "2019-12-12T08:51:27.533Z"
-    },
-    "t1681220959437775": {
-      "replies": [
-        null
-      ]
-    },
-    "tt1681220959437775": {
-      "replies": [
-        null
-      ]
-    },
-    "311680700424417": {
-      "replies": [
-        null
-      ]
-    },
-    "989777884442739": {
-      "id": 989777884442739,
-      "username": "hello",
-      "content": "When you get food at lenoir<figure class=\"image is-square\">\n        <img src=\"https://i.giphy.com/media/s9Tz78owQItvG/giphy.webp\">\n      </figure>",
-      "replies": [
-        "Agreed!",
-        "hear Hear",
-        "aggee",
-        "aggeea",
-        "Let's try this out",
-        "Ugh let me try this out ",
-        "Oh Nice",
-        "Try Again",
+        "Cool",
         "Hmm"
       ],
       "hearts": [],
-      "timestamp": "2019-12-12T09:21:14.793Z"
+      "timestamp": "2019-12-12T11:27:54.757Z"
+    },
+    "602450155699563": {
+      "id": 602450155699563,
+      "username": "hello",
+      "content": "Ok Cool ",
+      "replies": [],
+      "hearts": [],
+      "timestamp": "2019-12-12T11:42:45.854Z"
+    },
+    "\"3028406630180143\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"4923786152809159\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"1247124782190331\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"8912366938043777\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"8565698687769173\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"8677996808931025\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"2781752076346821\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"8339950286234201\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"1952540718310749\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"3466286408601217\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"3739511474560985\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"6773045343218901\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"7829151327909935\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"1070239527906413\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"2413102091783321\"": {
+      "hearts": [
+        "hello"
+      ]
+    },
+    "\"3428831189418261\"": {
+      "hearts": [
+        "hello"
+      ]
     }
   }
 }
