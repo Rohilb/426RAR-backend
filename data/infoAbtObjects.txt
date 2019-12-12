@@ -15,8 +15,15 @@ Reply objects should look like:
     "parentId" : "",
     "username": "",
     "content": "",
-    "hearts": []
     "timestamp": ""
 }
 parentId refers to the ID of the post being replied to.
 hearts should be an array of string objects.
+Event object should look like:
+{
+    eventId: "",
+    name: "",
+    hostedBy: "",
+    time: "",
+    content: ""
+}

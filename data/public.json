@@ -1,3 +1,29 @@
 {
-    
+  "posts": {
+    "username": "itsroroluvx",
+    "content": "fdsjafdjasjfldasjlfdasjlfdasjlfdasjkldasfkjlfdaskjfd"
+  },
+  "create": {
+    "username": "itsroroluvx",
+    "content": "fdsjafdjasjfldasjlfdasjlfdasjlfdasjkldasfkjlfdaskjfd"
+  },
+  "events": {
+    "1481799086711443": {
+      "eventId": 1481799086711443,
+      "name": "LDL Concert",
+      "host": "Stadium RAR",
+      "time": "Nov. 21 at 9:45 PM",
+      "details": "BEST CONCERT EVER",
+      "imageURL": "https://images.genius.com/a81f1051f61c93c3ad4489700ee04328.1000x1000x1.jpg"
+    },
+    "7499135900328293": {
+      "eventId": 7499135900328293,
+      "name": "PRISM New Year's Party",
+      "host": "PRISM",
+      "time": "December 31 @ 10 pm",
+      "details": "Location: Bade Club\nBring your friends to the event of the year!!\nTickets: $20 per person or FREE(if you can show us your PRISM Accnt)",
+      "user": "itsroroluvx",
+      "imageURL": ""
+    }
+  }
 }
