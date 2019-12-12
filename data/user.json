@@ -1,3 +1,117 @@
 {
-        
+  "itsroroluvx": {
+    "itsroroluvx": {
+      "yourname": "Roro",
+      "pronouns": "He/Him/His",
+      "age": "19",
+      "genderIdentity": "Male",
+      "interest": [
+        "Lana Del Rey",
+        " Ariana Grande",
+        " Angelina Jolie",
+        " Angelina Jolie's cheekbones",
+        " Angelina Jolie as Maleficent",
+        " Lady Gaga",
+        " Lorde",
+        " Melodrama",
+        " Nicki Minaj",
+        " Taylor Swift",
+        " Rihanna",
+        " Beyonce",
+        ""
+      ]
+    },
+    "users": {
+      "itsroroluvx": {
+        "yourname": "Roro",
+        "pronouns": "He/Him/His",
+        "age": "19",
+        "genderIdentity": "Male",
+        "interest": [
+          "Lana Del Rey",
+          " Ariana Grande",
+          " Angelina Jolie",
+          " Angelina Jolie's cheekbones",
+          " Angelina Jolie as Maleficent",
+          " Lady Gaga",
+          " Lorde",
+          " Melodrama",
+          " Nicki Minaj",
+          " Taylor Swift",
+          " Rihanna",
+          " Beyonce",
+          ""
+        ]
+      }
+    }
+  },
+  "carriebr": {
+    "users": {
+      "carriebr": {
+        "yourname": "Carrie Bradshaw",
+        "pronouns": "She/Her/Hers",
+        "age": "40",
+        "genderIdentity": "Female",
+        "interest": [
+          "Shoes",
+          " Blaniks",
+          " Writing"
+        ]
+      }
+    }
+  },
+  "carrieb": {
+    "users": {
+      "carrieb": {
+        "yourname": "Carrie Bradshaw",
+        "pronouns": "She/Her/Hers",
+        "age": "35",
+        "genderIdentity": "Female",
+        "interest": [
+          "Shoes",
+          " TV shows",
+          " Manolo Blaniks"
+        ]
+      }
+    }
+  },
+  "ldl": {
+    "ldl": {
+      "yourname": "LDL",
+      "pronouns": "She/Her/Hers",
+      "age": "30",
+      "genderIdentity": "Female",
+      "interest": [
+        "Singing",
+        " Rock music",
+        " Normal Rockwell"
+      ]
+    }
+  },
+  "brian": {
+    "brian": {
+      "yourname": "Brian",
+      "pronouns": "He/Him/His",
+      "age": "31",
+      "genderIdentity": "Male",
+      "interest": [
+        "Hiking",
+        " None rly",
+        " Fencing"
+      ]
+    }
+  },
+  "brie111": {
+    "brie111": {
+      "yourname": "Brie Larson",
+      "pronouns": "She/Her/Hers",
+      "age": "25",
+      "genderIdentity": "Female",
+      "interest": [
+        "hiking",
+        " fencing",
+        " boxing"
+      ]
+    }
+  }
 }
